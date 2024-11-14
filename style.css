@@ -1,0 +1,202 @@
+/* General body styling */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6; /* Slightly lighter background for a cleaner look */
+    color: #333;
+  }
+  
+  /* Main heading */
+  h1 {
+    text-align: center;
+    color: #2c3e50; /* Darker shade for better readability */
+    font-size: 2.5rem;
+    font-weight: 700; /* Bolder for emphasis */
+    margin-bottom: 40px;
+    letter-spacing: 1px; /* Reduced letter-spacing for a neater appearance */
+  }
+  
+  /* Form styling */
+  form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for a subtle effect */
+    padding: 30px;
+    border-top: 5px solid #e74c3c; /* Updated color for a vibrant look */
+  }
+  
+  /* Fieldset styling */
+  fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  /* Legend styling */
+  legend {
+    font-weight: 700;
+    color: #34495e; /* Slightly muted for a modern touch */
+    font-size: 1.3rem;
+    border-bottom: 2px solid #e74c3c; /* Consistent with form border color */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  /* Label styling */
+  label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #34495e; /* Consistent with legend color */
+  }
+  
+  /* Input and textarea styling */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 2px solid #bdc3c7; /* Light grey for a subtle border */
+    box-sizing: border-box;
+    background-color: #ecf0f1; /* Light background for inputs */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input and textarea focus effects */
+  input:focus,
+  textarea:focus {
+    border-color: #e74c3c; /* Updated to match form border color */
+    outline: none;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.3); /* Soft glow effect */
+  }
+  
+  /* Button styling */
+  button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #e74c3c; /* Vibrant red for attention */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700; /* Bolder font for emphasis */
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #c0392b; /* Darker red for hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Resume output container styling */
+  #resumeOutput {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid #e74c3c; /* Consistent with form and button color */
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for consistency */
+    color: #2c3e50; /* Darker color for readability */
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Resume heading styling */
+  #resumeOutput h2 {
+    text-align: center;
+    color: #2c3e50; /* Consistent with main heading color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700; /* Bolder for emphasis */
+    letter-spacing: 1px; /* Consistent with main heading */
+  }
+  
+  /* Section titles within resume */
+  #resumeOutput h3 {
+    color: #e74c3c; /* Consistent with form and button color */
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bdc3c7; /* Light grey for a subtle effect */
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Icon for section titles */
+  #resumeOutput h3::before {
+    content: "✧";
+    color: #e74c3c; /* Consistent with section titles color */
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Text and content inside the resume */
+  #resumeOutput p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    line-height: 1.8;
+    color: #333; /* Darker color for readability */
+  }
+  
+  /* Styling for list items in resume (e.g., skills, experience) */
+  #resumeOutput ul {
+    padding-left: 20px;
+  }
+  
+  #resumeOutput ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  #resumeOutput ul li::before {
+    content: "•";
+    color: #e74c3c; /* Consistent with list item bullets color */
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    #resumeOutput {
+      padding: 20px;
+    }
+  
+    #resumeOutput h2 {
+      font-size: 1.6rem;
+    }
+  
+    #resumeOutput h3 {
+      font-size: 1.2rem;
+    }
+  
+    #resumeOutput p {
+      font-size: 1rem;
+    }
+  }
